@@ -1,3 +1,4 @@
-#DEMO Repos说明
-这里面都是我自学JavaScript的时候重点分析过的demo
-一般都是源码里面写了详尽的注释+构思整个项目的流程
+#DEMO Repos璇存槑
+杩欓噷闈㈤兘鏄垜鑷JavaScript鐨勬椂鍊欓噸鐐瑰垎鏋愯繃鐨刣emo
+
+涓�鑸兘鏄簮鐮侀噷闈㈠啓浜嗚灏界殑娉ㄩ噴+鏋勬�濇暣涓」鐩殑娴佺▼
