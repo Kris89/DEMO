@@ -3,7 +3,7 @@
 1.DOM结构上	
 container里边装了四个section；
 
-2.原理上
+2.原理上  
 结构上，container与四个section作为一个整体；  
 container结构整体相对于浏览器窗口做css滑动；  
 滑动以每个section 为单位进行（但是当loop为true并且边界操作时就要一次滑过多个页面）。  
