@@ -101,8 +101,8 @@
 	//横向布局初始化
 	function initLayout(){
 		var length = sections.length,
-			width = (length*100)+"%",
-			cellWidth = (100/length).toFixed(2)+"%";
+			width = (length*100)+"%",//container的width
+			cellWidth = (100/length).toFixed(2)+"%";//以container为父元素的section的width
 		container.width(width).addClass("left");
 		sections.width(cellWidth).addClass("left");
 	}
@@ -117,21 +117,21 @@
 		for(var i=1;i<length;i++){
 			pageHtml += '<li></li>';
 		}
-		pageHtml += '</ul>';
+		pageHtml += '</ul>';//+=运算符的使用
 		$("body").append(pageHtml);
 	}
 
 	//分页事件
-	function paginationHandler(){
-		var pages = $("#pages li");
-		pages.eq(iIndex).addClass("active").siblings().removeClass("active");
+	function paginationHandler(){//分页样式是页面滚动整个流程的最后一步，至此iIndex已经更改到了目标section的索引值
+		var pages = $("#pages li");//获取li dom，构造成pages数组
+		pages.eq(iIndex).addClass("active").siblings().removeClass("active");//对pages数组操作
 	}
 
 	//是否支持css的某个属性
 	function isSuportCss(property){
-		var body = $("body")[0];
-		for(var i=0; i<property.length;i++){
-			if(property[i] in body.style){
+		var body = $("body")[0];//body返回的是一个数组？
+		for(var i=0; i<property.length;i++){//考虑到浏览器兼容，property是一个数组
+			if(property[i] in body.style){//遍历数组确认对属性的支持
 				return true;
 			}
 		}
