@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="data.js"></script>
+	<style>
+		body{margin:0;overflow: hidden;background-color: #993}
+		.clear:after{content:'';display:block;clear:both;}
+		.clear{zoom:1;}
+		#box{ width:800px; position:relative; margin:50px auto;border: 1px solid rgb(250,250,250)}
+		#canvas{ background:#666; float:left;}
+	</style>
+</head>
+<body>
+	<div id="box" class="clear">
+		<canvas id='canvas' width="538" height="490"></canvas>
+	</div>
+	<div style="display:none;">
+	  <img id="iBoom" src="img/Boom.png" />
+	  <img id="iFrag" src="img/Frag.png"/>
+	  <img id="iMisc" src="img/Misc.png" />
+	  <img id="iTank" src="img/Tank.png"/>
+	  <img id="iTerr" src="img/Terr.png" />
+	  <img id="iUI" src="img/UI.png"/>
+	</div>
+	<script type="text/javascript">
+		var canvas = document.getElementById("canvas");
+		var cxt = canvas.getContext('2d');
+		var oBox = document.getElementById('box');
+		var iBoom = document.getElementById('iBoom');
+		var iFrag = document.getElementById('iFrag');
+		var iMisc = document.getElementById('iMisc');
+		var iTank = document.getElementById('iTank');
+		var iTerr = document.getElementById('iTerr');
+		var iUI = document.getElementById('iUI');
+	</script>
+	<script type="text/javascript" src="data.js"></script>
+	<script type="text/javascript" src="Modules/Core/Tank.js"></script>
+	<script type="text/javascript" src="Modules/Core/Test.js"></script>
+	<script type="text/javascript" src="Modules/Core/Bullet.js"></script>
+	<script type="text/javascript" src="Modules/Core/Boom.js"></script>
+	<script type="text/javascript" src="Modules/Core/spirit.js"></script>
+	<script type="text/javascript" src="Modules/Core/Bonus.js"></script>
+	<script type="text/javascript" src="Modules/Core/Score.js"></script>
+	<script type="text/javascript" src="Modules/Core/Map.js"></script>
+	<script type="text/javascript" src="Modules/GameOrganize/GameOver.js"></script>
+	<script type="text/javascript" src="Modules/GameOrganize/GameStart.js"></script>
+	<script type="text/javascript" src="Modules/GameOrganize/GamePlay.js"></script>	
+	<script type="text/javascript" src="Timer.js"></script>
+	<script src = "keyControl.js"></script>
+</body>
+</html>
